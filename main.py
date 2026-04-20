@@ -18,5 +18,10 @@ if choix == "3":
   prod = multiplication (a , b)
   print ("Le résultat de la multiplication est : ", prod)
 if choix == "4":
-  quot = division (a , b)
-  print ("Le résultat de la division est : ", quot)
+    if b == 0:
+      print ("Erreur, la division par zéro est impossible")
+    else :
+     quot = division (a , b)
+     print ("Le résultat de la division est : ", quot)
+
+  

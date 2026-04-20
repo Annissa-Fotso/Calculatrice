@@ -6,18 +6,17 @@ def afficher_menu ():
     print ("4. Division")
 afficher_menu ()
 choix = input ("choisissez une opération, (1 , 2 , 3 ou 4): ")
-
 a = float (input ("Entrez le premier nombre : "))
-b = float (input ("Entrez le deuxieme nombre : "))
-sum = a + b
-dif = a - b
-prod = a * b
-quot = a / b
+b = float (input ("Entrez le deuxieme nombre : ")) 
 if choix == "1":
- print ("Le résultat de l'addition est : ", sum ) 
-elif choix == "2":
+  sum = addition (a , b)
+  print ("Le résultat de l'addition est : ", sum ) 
+if choix == "2":
+ dif = soustraction (a , b)
  print (" Le résultat de la soustraction est : ", dif)
-elif choix == "3":
+if choix == "3":
+  prod = multiplication (a , b)
   print ("Le résultat de la multiplication est : ", prod)
-elif choix == "4":
+if choix == "4":
+  quot = division (a , b)
   print ("Le résultat de la division est : ", quot)

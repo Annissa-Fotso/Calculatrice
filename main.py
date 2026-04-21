@@ -9,19 +9,19 @@ choix = input ("choisissez une opération, (1 , 2 , 3 ou 4): ")
 a = float (input ("Entrez le premier nombre : "))
 b = float (input ("Entrez le deuxieme nombre : ")) 
 if choix == "1":
-  sum = addition (a , b)
-  print ("Le résultat de l'addition est : ", sum ) 
+    sum = addition (a , b)
+    print ("Le résultat de l'addition est : ", sum ) 
 if choix == "2":
- dif = soustraction (a , b)
- print (" Le résultat de la soustraction est : ", dif)
+    dif = soustraction (a , b)
+    print (" Le résultat de la soustraction est : ", dif)
 if choix == "3":
-  prod = multiplication (a , b)
-  print ("Le résultat de la multiplication est : ", prod)
+    prod = multiplication (a , b)
+    print ("Le résultat de la multiplication est : ", prod)
 if choix == "4":
     if b == 0:
-      print ("Erreur, la division par zéro est impossible")
+        print ("Erreur, la division par zéro est impossible")
     else :
-     quot = division (a , b)
-     print ("Le résultat de la division est : ", quot)
+        quot = division (a , b)
+        print ("Le résultat de la division est : ", quot)
 
   

@@ -2,18 +2,13 @@ from calculator import addition , soustraction , multiplication , division , pou
 memoire = 0
 historique = []
 def afficher_menu ():
-    print ("1. Addition")
-    print ("2. Soustraction")
-    print ("3. Multiplication")
-    print ("4. Division")
-    print ("5. Pourcentage")
-    print ("6. Racine_carree")
-    print ("7. Résultat_en_mémoire")
+    print ("1. Addition" , "2. Soustraction" , "3. Multiplication" , "4. Division" )
+    print ("5. Pourcentage" , "6. Racine carree" , "7. Résultat en mémoire" )
     print ("8. Historique")
     print ("9. Quitter")
 while True:
     afficher_menu ()
-    choix = input ("choisissez une opération, (1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 ou 9 ) "  )
+    choix = input ("choisissez une opération de 1 à 9 : "  )
     if choix in ["1" , "2" , "3" , "4"]:
         while True:
             try:
@@ -31,17 +26,17 @@ while True:
             sum = addition (a , b)
             print ("Le résultat de l'addition est : ", sum )
             memoire = sum 
-            historique.append(str(a) +  "+"  + str(b) +  "="  + str(sum))
+            historique.append(str(a) +   "+"   + str(b) +   "="   + str(sum))
         elif choix == "2":
             dif = soustraction (a , b)
             print (" Le résultat de la soustraction est : ", dif)
             memoire = dif
-            historique.append(str(a) +  "-"  + str(b) +  "="  + str(dif))
+            historique.append(str(a) +   "-"   + str(b) +   "="   + str(dif))
         elif choix == "3":
             prod = multiplication (a , b)
             print ("Le résultat de la multiplication est : ", prod)
             memoire = prod
-            historique.append(str(a) +  "*"  + str(b) +  "="  + str(prod))
+            historique.append(str(a) +   "*"   + str(b) +   "="   + str(prod))
         elif choix == "4":
             if b == 0:
                 print ("Erreur, la division par zéro est impossible")
@@ -49,13 +44,13 @@ while True:
                 quot = division (a , b)
                 print ("Le résultat de la division est : ", quot)
                 memoire = quot
-                historique.append(str(a) +  "/"  + str(b) +  "="  + str(quot))
+                historique.append(str(a) +   "/"   + str(b) +   "="   + str(quot))
     elif choix == "5":
         p = float (input("Entrez un nombre: " ))
         résultat = pourcentage ( p ) 
         print ("Le résultat de la division par cent est : ", résultat, "%")
         memoire = résultat
-        historique.append(str(p) +  "/"  + str(100) +  "="  + str(résultat))
+        historique.append(str(p) +   "/"   + str(100) +   "="   + str(résultat))
     elif choix == "6":
         n = float (input("Entrez un nombre "))
         if n < 0:
@@ -64,7 +59,7 @@ while True:
             résultat = racine_carree (n)
             print (" La racine carrée de votre nombre est : ", résultat )
             memoire = résultat
-            historique.append(str(n ** 0.5)   +  " = "  +  str(résultat))
+            historique.append("√" + str(n) +  " = "  +  str(résultat))
     elif choix == "7":
         if memoire == 0:
             print ("Aucun résultat en mémoire")
@@ -81,6 +76,6 @@ while True:
         print ("Aurevoir!")
         break
     else :
-        print ("Entrée invalide, veuillez choisir un nombre de 1 à 8 " )
+        print ("Entrée invalide, veuillez choisir un nombre de 1 à 9 " )
 
   

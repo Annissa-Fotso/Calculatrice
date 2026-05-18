@@ -2,12 +2,17 @@ from calculator import addition , soustraction , multiplication , division , pou
 memoire = 0
 historique = []
 def afficher_menu ():
-    print ("1. Addition" , "2. Soustraction" , "3. Multiplication" , "4. Division" )
-    print ("5. Pourcentage" , "6. Racine carree" , "7. Résultat en mémoire" )
+    print ("1. Addition") 
+    print ("2. Soustraction") 
+    print ("3. Multiplication") 
+    print ("4. Division") 
+    print ("5. Pourcentage")
+    print ("6. Racine carree")
+    print ("7. Résultat en mémoire" )
     print ("8. Historique")
     print ("9. Quitter")
+afficher_menu ()
 while True:
-    afficher_menu ()
     choix = input ("choisissez une opération de 1 à 9 : "  )
     if choix in ["1" , "2" , "3" , "4"]:
         while True:

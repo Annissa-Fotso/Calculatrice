@@ -29,17 +29,23 @@ while True:
              print ("Entrée invalide, veuillez entrer un nombre")  
         if choix == "1":
             sum = addition (a , b)
+            print ("")
             print ("Le résultat de l'addition est : ", sum )
+            print ("")
             memoire = sum 
             historique.append(str(a) +   "+"   + str(b) +   "="   + str(sum))
         elif choix == "2":
             dif = soustraction (a , b)
+            print ("")
             print (" Le résultat de la soustraction est : ", dif)
+            print ("")
             memoire = dif
             historique.append(str(a) +   "-"   + str(b) +   "="   + str(dif))
         elif choix == "3":
             prod = multiplication (a , b)
+            print ("")
             print ("Le résultat de la multiplication est : ", prod)
+            print ("")
             memoire = prod
             historique.append(str(a) +   "*"   + str(b) +   "="   + str(prod))
         elif choix == "4":
@@ -47,13 +53,17 @@ while True:
                 print ("Erreur, la division par zéro est impossible")
             else :
                 quot = division (a , b)
+                print ("")
                 print ("Le résultat de la division est : ", quot)
+                print ("")
                 memoire = quot
                 historique.append(str(a) +   "/"   + str(b) +   "="   + str(quot))
     elif choix == "5":
         p = float (input("Entrez un nombre: " ))
-        résultat = pourcentage ( p ) 
+        résultat = pourcentage ( p )
+        print ("") 
         print ("Le résultat de la division par cent est : ", résultat, "%")
+        print ("")
         memoire = résultat
         historique.append(str(p) +   "/"   + str(100) +   "="   + str(résultat))
     elif choix == "6":
@@ -62,7 +72,9 @@ while True:
             print ("Erreur, résulatat des nombres négatifs impossible")
         else :
             résultat = racine_carree (n)
+            print ("")
             print (" La racine carrée de votre nombre est : ", résultat )
+            print ("")
             memoire = résultat
             historique.append("√" + str(n) +  " = "  +  str(résultat))
     elif choix == "7":
